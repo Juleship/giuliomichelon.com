@@ -1,0 +1,1 @@
+$(document).ready(function(){$("a[href*=#]").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=$(this.hash);e=e.length&&e||$("[name="+this.hash.slice(1)+"]");if(e.length){var t=e.offset().top;$("html,body").animate({scrollTop:t},1e3);return!1}}})});

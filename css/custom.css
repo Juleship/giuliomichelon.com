@@ -1,0 +1,75 @@
+body {
+  border-top: 3px solid #2c3e50;
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: .6s;
+  -webkit-animation-timing-function: linear;
+}
+
+h4, h3, h2, h1 {
+  font-family: Futura, Century Gothic;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+body, p, a {
+  font-family: Bodoni;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+.lastfm-animation {
+  background: black;
+  height: 1.5em;
+  width: 1.5em;
+  float: left;
+  margin-right: .4em;
+  border-radius: 50%;
+}
+
+.serpentina {
+  background: white;
+  height: .7em;
+  width: .7em;
+  margin: .25em .25em;
+  border-radius: 50%;
+
+  -webkit-animation-name: myfirst;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {opacity: .2;}
+    50%  {opacity: 1;}
+    100% {opacity: .2;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {opacity: .2;}
+    50%  {opacity: 1;}
+    100% {opacity: .2;}
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}
+}
