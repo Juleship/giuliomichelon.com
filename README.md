@@ -1,4 +1,4 @@
 # giuliomichelon.com
-Personal website of Giulio Michelon.
+Personal website of Giulio Michelon. This is done all by hand and it's static for the sake of simplicity. Github is kindly hosting it as well. 
 
-This is done all by hand and it's static for the sake of simplicity. Maybe one day it will be integrated in Jekyll but now it's enough.
+Thanks octocat!
