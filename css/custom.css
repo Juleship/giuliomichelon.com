@@ -3,6 +3,34 @@ body {
   -webkit-animation-name: fadeIn;
   -webkit-animation-duration: .6s;
   -webkit-animation-timing-function: linear;
+  background: linear-gradient(124deg, white, #f6f6f6);
+  background-size: 1800% 1800%;
+
+  -webkit-animation: rainbow 30s ease infinite;
+  -z-animation: rainbow 30s ease infinite;
+  -o-animation: rainbow 30s ease infinite;
+  animation: rainbow 30s ease infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
 }
 
 h4, h3, h2, h1 {
@@ -23,7 +51,8 @@ a {
 }
 
 a:hover {
-  color: inherit;
+  color: white;
+  background: red;
 }
 
 .lastfm-animation {
