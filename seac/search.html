@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Design sprint</title>
+  <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page_search">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="/">SEAC</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="" class="nav-link">Myseac</a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link">Luca Fierozzi
+            <i class="fas fa-user circle_user"></i>
+          </a>
+        </li>
+
+      </ul>
+  </nav>
+  <div>
+
+    <div class="sidebar">
+      <p class="sidebar__title">Anno</p>
+      <ul>
+        <li>
+          <a href="">2018 (3)</a>
+        </li>
+        <li>
+          <a href="">2017 (1)</a>
+        </li>
+        <li>
+          <a href="">2016 (2)</a>
+        </li>
+        <li>
+          <a href="">2015 (9)</a>
+        </li>
+      </ul>
+      <div class="sidebar__divider"></div>
+      <p class="sidebar__title">Fisco</p>
+      <ul>
+        <li>
+          <a href="">Adempimenti</a>
+        </li>
+        <li>
+          <a href="">Accertamento</a>
+        </li>
+        <li>
+          <a href="">Sanzioni</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <form action="/search.html" class="form search_container__search_page">
+              <!-- ricerca -->
+              <div class="input-group">
+                <input id="input_search" style="width:100%" class="form-control" placeholder="" name="ricerca">
+                <div class="input-group-addon">
+                  <i class="fa fa-search"></i>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <br>
+
+      </div>
+        
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Fisco (4)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Lavoro (4)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Norma (10)</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="prassi-tab" data-toggle="tab" href="#prassi" role="tab" aria-controls="prassi" aria-selected="false">Prassi (80)</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                </div>
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+                </div>
+                <div class="tab-pane fade" id="prassi" role="tabpanel" aria-labelledby="prassi-tab">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4">
+              <!-- top-bottoni -->
+              <div class="row">
+                <div class="col">
+                  <button type="button" class="btn btn-secondary" style="float: left; margin-right: 8px;">Data
+                    <i class="fas fa-arrow-down"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary" style="float: left; margin-right: 8px;">Servizio
+                    <i class="fas fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>      
+
+              <div class="card" style="width: 100%; margin-top: 16px;">
+                <div class="card-body">
+                  <h5 class="card-title">Il notiziario</h5>
+                  <p class="card-text">Rivista specializzata su tematiche fiscali 2018 MARZO 3.</p>
+                  <a onclick="change_pdf('not1803full.pdf')" href="#" class="btn btn-primary">Leggi</a>
+                </div>
+              </div>
+              <div class="card" style="width: 100%; margin-top: 16px;">
+                <div class="card-body">
+                  <h5 class="card-title">Comunicazione liquidazione periodica iva</h5>
+                  <p class="card-text">Aggiornata al 9.2.2018</p>
+                  <a onclick="change_pdf('sof0271_00.pdf')" href="#" class="btn btn-primary">Leggi</a>
+                </div>
+              </div>
+              <div class="card" style="width: 100%; margin-top: 16px;">
+                <div class="card-body">
+                  <h5 class="card-title">Detrazione iva e riflessi contabili </h5>
+                  <p class="card-text">Aggiornata al 15.2.2018</p>
+                  <a onclick="change_pdf('sof0272_00.pdf')" href="#" class="btn btn-primary">Leggi</a>
+                </div>
+              </div>
+              <div class="card" style="width: 100%; margin-top: 16px;">
+                <div class="card-body">
+                  <h5 class="card-title">Settimana professionale 21 febbraio 2018</h5>
+                  <p class="card-text">La rivista di approfondimento contabile - professionale - fiscale.</p>
+                  <a onclick="change_pdf('SPCF1807.pdf')" href="#" class="btn btn-primary">Leggi</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-8">
+              <div id="embed_container">
+                <embed id="embed_pdf" src="/content/sof0271_00.pdf" width="100%" height="100%" alt="pdf">
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
